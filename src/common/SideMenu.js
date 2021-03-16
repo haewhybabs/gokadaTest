@@ -55,7 +55,7 @@ class SideMenu extends Component {
                 }}
               >
                 <View style={Styles.navItemStyle}>
-                  <Icon name="home" type="entypo" size={23} />
+                  <Icon name='sc-telegram' type='evilicon' size={23} />
                   <Text style={[Styles.navTextStyle]}>WithRedux</Text>
                 </View>
               </TouchableOpacity>
@@ -66,7 +66,7 @@ class SideMenu extends Component {
                 }}
               >
                 <View style={Styles.navItemStyle}>
-                  <Icon name="home" type="entypo" size={23} />
+                  <Icon name="user" type="entypo" size={23} />
                   <Text style={[Styles.navTextStyle]}>User</Text>
                 </View>
               </TouchableOpacity>

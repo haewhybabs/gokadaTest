@@ -21,6 +21,10 @@ const initialState = {
 }
 
 const reducer = (state=initialState,action)=>{
+  switch(action.type){
+    case 'UpdateData':
+    return action.payload
+  }
   return state;
 }
 
