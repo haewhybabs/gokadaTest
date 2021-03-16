@@ -10,5 +10,9 @@ follow the following commands to get it started:
 
 * start the server with "react-native run-android"
 
+## Information
+
+* Unsplash api was used for data testing
+
 ## Author
 **Ayobami Babalola**
