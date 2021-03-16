@@ -1,12 +1,27 @@
 import React, { Component } from 'react'
-import {View,Text} from 'react-native';
-
+import {createStore} from 'redux';
+import {Provider} from 'react-redux';
+import { createAppContainer } from 'react-navigation';
+import { switchNavigator } from './src/navigation/switchNavigator';
+import 'react-native-gesture-handler';
+const AppNav = createAppContainer(switchNavigator);
 export default class App extends Component {
   render() {
     return (
-      <View>
-        <Text>Hello world</Text>
-      </View>
+      <Provider store={store}>
+        <AppNav />
+      </Provider>
+        
     )
   }
 }
+
+const initialState = {
+  data:null
+}
+
+const reducer = (state=initialState,action)=>{
+  return state;
+}
+
+const store = createStore(reducer);
